@@ -131,10 +131,7 @@ a[href="mailto:mike@gomikedesigns.com"]:focus {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
+
 
 .b-parallax {
     background-attachment: fixed;
@@ -563,6 +560,16 @@ button {
     box-shadow: none;
 }
 
+form input:invalid,
+form textarea:invalid {
+    border-color: red;
+}
+
+#form-submit {
+    background-color: #364577;
+}
+
+
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -842,7 +849,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(54, 69, 119, .95);
+    background-color: #364577;
     padding: 4rem 4rem 4rem 4rem;
 }
 
@@ -957,12 +964,9 @@ footer.bgc-dark-slate-blue {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-color: #364577;
 }
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
 
 .bg-atlanta-20made-20sign {
     background-image: url("img/made-in-atlanta-goMike-web-design.jpg");
@@ -974,7 +978,44 @@ footer.bgc-dark-slate-blue {
 
 .call-to-action {
     height: 48rem;
+    padding: 5rem;
 }
+
+.business-information a:link,
+.business-information a:visited {
+    color: #191919;
+    transition: border 400ms linear;
+    border: none;
+    padding: 2px;
+}
+
+.business-information a:focus,
+.business-information a {
+    border: 1px solid #364577;
+}
+
+.business-information {
+    margin-left: 15rem;
+}
+
+.skip-to-content-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+    background: #364577;
+    color: #fff!important;
+    height: 6rem;
+    padding: 1.5rem;
+    transition: transform 0.3s;
+    z-index: 2999;
+    border-bottom-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    text-decoration: none!important;
+  }
+
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
 
 @media (max-width: 1024px) {
     .bloc {

@@ -40,6 +40,25 @@ a:hover {
     cursor: pointer;
 }
 
+.footer-link a:link,
+.footer-link a:visited,
+a[href="mailto:mike@gomikedesigns.com"]:link,
+a[href="mailto:mike@gomikedesigns.com"]:visited {
+    color: rgba(255,255,255,.7);
+    transition: all 500ms linear;
+    text-decoration: none;
+}
+
+.footer-link a:hover,
+.footer-link a:focus,
+a[href="mailto:mike@gomikedesigns.com"]:hover,
+a[href="mailto:mike@gomikedesigns.com"]:focus {
+    color: rgba(255,255,255,1);
+    text-decoration: underline;
+}
+
+ 
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -122,12 +141,9 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: #fff;
 }
 
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
-}
 
 .d-bloc .icon-round,
 .d-bloc .icon-square,
@@ -141,39 +157,24 @@ a:hover {
     border-color: rgba(255, 255, 255, .2);
 }
 
-.d-bloc .a-btn,
-.d-bloc .navbar a,
-.d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
-.d-bloc h1 a,
-.d-bloc h2 a,
-.d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+.d-bloc a .icon-md {
+    color: #fff;
+    transition: all 500ms linear;
+    transform: scale(1);
+    border: none;
+    padding: 6px;
 }
 
-.d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+
+.d-bloc a:hover .icon-md {
+    color: #CD9645;
+    transform: scale(1.08);
 }
+
+.d-bloc a:focus .icon-md {
+    border: 1px dashed #fff;
+}   
+
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
@@ -528,11 +529,11 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 5rem!important;
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 6rem!important;
 }
 
 .sm-shadow {
@@ -546,7 +547,7 @@ button {
 }
 
 .panel-rd {
-    border-radius: 30px;
+    border-radius: 3rem;
 }
 
 .panel-rd .panel-heading {
@@ -735,7 +736,7 @@ label,
 a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    color: #191919!important;
+    color: #191919;
 }
 
 .container {
@@ -785,7 +786,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 2rem auto;
 }
 
 h2 {
@@ -828,7 +829,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin: 0 auto 2.4rem auto;
 }
 
 .portfolio-row {
@@ -872,25 +873,27 @@ blockquote cite a:focus {
 
 #whatido a:link,
 #whatido a:visited {
-    color: #FFF4B4!important;
     font-size: 1.7rem;
     border: none;
     padding: 2rem;
     border-radius: 2.5rem;
-
+    color: #FFF!important;
     transition: all 500ms linear;
     transform: scale(1);
+    text-decoration: none!important;
 }
 
 #whatido a:focus {
-    text-decoration: none!important;
     border: 1px dashed #FFF4B4;
     transform: scale(1.1);
+    color: #FFF4B4!important;
+
 }
 
 #whatido a:hover {
     transform: scale(1.1);
     background-color: rgba(0,0,0,.2);
+    color: #FFF4B4!important;
 }
 
 
@@ -899,7 +902,12 @@ blockquote cite a:focus {
 }
 
 .bgc-dark-slate-blue {
-    background-color: rgba(54, 69, 119, .1);
+    background-color: rgba(65, 98, 206, 0.1);
+}
+
+footer.bgc-dark-slate-blue {
+    background-color: #8E350A;
+    padding: 5rem;
 }
 
 .bgc-atomic-tangerine {
@@ -962,6 +970,10 @@ blockquote cite a:focus {
 
 .bg-atlanta-20made-20sign-20orange {
     background-image: url("img/made-in-atlanta-goMike-logo-design.jpg");
+}
+
+.call-to-action {
+    height: 48rem;
 }
 
 @media (max-width: 1024px) {

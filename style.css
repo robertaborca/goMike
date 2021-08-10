@@ -10,7 +10,7 @@ html {
     /*  1rem = 10px */
     font-size: 62.5%; 
     scroll-behavior: smooth;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -310,6 +310,7 @@ a[href="mailto:mike@gomikedesigns.com"]:focus {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    width: 100%;
 }
 
 .navbar-brand:link,
@@ -917,6 +918,10 @@ footer.bgc-dark-slate-blue {
     padding: 5rem;
 }
 
+#partners {
+    margin-right: 32rem;
+}
+
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
@@ -1018,16 +1023,32 @@ footer.bgc-dark-slate-blue {
   }
 
 @media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
+    html {
+        font-size: 58%;
     }
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    .bloc {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+    }
+
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    #whatido .black-background {
+        max-width: 90%;
+
+        overflow-x: hidden;
     }
 }
 
@@ -1037,6 +1058,10 @@ footer.bgc-dark-slate-blue {
     }
     .nav-center.navbar .nav {
         max-width: 100%
+    }
+
+    #partners {
+        margin-right: 25rem;
     }
 }
 
@@ -1082,6 +1107,31 @@ footer.bgc-dark-slate-blue {
 }
 
 @media (max-width: 767px) {
+    html {
+        font-size: 56%;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+    }
+
+    #form-container {
+        padding: 3rem;
+    }
+
+    #business-info {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    #business-info .business-information {
+        margin-left: 0;
+    }
+
+    #partners {
+        margin-right: 0;
+    }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1218,9 +1268,40 @@ footer.bgc-dark-slate-blue {
         width: 180px;
         height: 320px;
     }
+
+    .icon-md {
+        font-size: 3rem!important;
+    }
+
+    footer .row {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
+    html {
+        font-size: 54%;
+    }
+
+    h1 {
+        font-size: 2.8rem!important;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    #mike-cartoon-pic img {
+        width: 15rem;
+        height: auto;
+    }
+
+    #whatido .black-background {
+        padding: 1rem;
+    }
+
     .bloc {
         padding-left: 0;
         padding-right: 0;
